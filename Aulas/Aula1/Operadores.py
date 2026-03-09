@@ -1,13 +1,4 @@
-'''
-==========================================
-OPERADORES EM PYTHON
-Aritméticos | Decisão | Lógicos | IF | MATCH
-==========================================
-'''
-
-# ---------------------------------
 # OPERADORES ARITMÉTICOS
-# ---------------------------------
 
 # +  -> soma
 # -  -> subtracção
@@ -26,10 +17,7 @@ print(f"Multiplicação: {num1 * num2}")
 print(f"Resto da divisão: {num1 % num2}")
 print(f"Potência: {num1 ** num2}")
 
-
-# ---------------------------------
 # OPERADORES DE DECISÃO
-# ---------------------------------
 
 # ==  igualdade
 # !=  diferente
@@ -38,19 +26,13 @@ print(f"Potência: {num1 ** num2}")
 # >=  maior ou igual
 # <=  menor ou igual
 
-
-# ---------------------------------
 # OPERADORES LÓGICOS
-# ---------------------------------
 
 # and -> E (todas as condições verdadeiras)
 # or  -> OU (pelo menos uma verdadeira)
 # not -> negação
 
-
-# ---------------------------------
 # IF SIMPLES
-# ---------------------------------
 
 val1 = 2
 val2 = 3
@@ -62,9 +44,8 @@ else:
     print("val2 é maior ou igual a val1")
 
 
-# ---------------------------------
 # EXERCÍCIO: ENCONTRAR O MAIOR E O MENOR
-# ---------------------------------
+
 # Forma organizada e correcta
 
 if val1 >= val2 and val1 >= val3:
@@ -85,9 +66,8 @@ print(f"O maior valor é: {maior}")
 print(f"O menor valor é: {menor}")
 
 
-# ---------------------------------
 # MATCH CASE (Python 3.10+)
-# ---------------------------------
+
 
 print("\nMenu:")
 print("1 - Bom dia")

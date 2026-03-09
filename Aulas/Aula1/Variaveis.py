@@ -1,22 +1,10 @@
-
-'''
-==========================================
-COMENTÁRIOS E TIPOS DE DADOS EM PYTHON
-==========================================
-'''
-
 # Comentário de uma linha utiliza o símbolo #
 
-# ---------------------------------
 # OUTPUT (SAÍDA) PARA A CONSOLA
-# ---------------------------------
 
 print("Hello World TPSI0226")
 
-
-# ---------------------------------
 # INT (Número Inteiro)
-# ---------------------------------
 
 tel = 9   # número inteiro (int)
 print("\nTipo da variável tel:")
@@ -38,10 +26,7 @@ print(type(tel))
 print("Novo valor de tel:")
 print(tel)
 
-
-# ---------------------------------
 # FLOAT (Número Decimal)
-# ---------------------------------
 
 med = 2.3
 print("\nTipo da variável med:")
@@ -49,10 +34,7 @@ print(type(med))
 print("Valor de med:")
 print(med)
 
-
-# ---------------------------------
 # STRING (Texto)
-# ---------------------------------
 
 nom = "Dario"
 print("\nTipo da variável nom:")
@@ -61,9 +43,7 @@ print("Valor de nom:")
 print(nom)
 
 
-# ---------------------------------
 # BOOLEAN (Verdadeiro ou Falso)
-# ---------------------------------
 
 flag = True
 print("\nTipo da variável flag:")
@@ -71,10 +51,8 @@ print(type(flag))
 print("Valor de flag:")
 print(flag)
 
-
-# ---------------------------------
 # LISTA []
-# ---------------------------------
+
 # Pode guardar vários tipos de dados
 # É MUTÁVEL (pode ser alterada)
 
@@ -86,9 +64,7 @@ print("Conteúdo da lista:")
 print(lista)
 
 
-# ---------------------------------
 # TUPLO ()
-# ---------------------------------
 # Parecido com a lista, mas é IMUTÁVEL
 # Não pode ser alterado depois de criado
 
