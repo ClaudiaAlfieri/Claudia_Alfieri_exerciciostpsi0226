@@ -7,7 +7,7 @@ indices = []
 def insert(nomesi:list):
     nomesi.append(input("insert um nome"))
  
- #2 - listar nomes
+ #2 - listar nome
 def listar(nomesl:list):
     for nome in nomesl:
         print("nome : " , nome)
@@ -25,14 +25,13 @@ def delete(nomesd:list):
 
 #4 - procurar nome -> retorna a posiçao do nome na lista e o nome encontrado dentro do while      
 
-def procurar(nomesprocura:list, indices:list):
+def procurar(nomesp:list, indices:list):
     indices.clear()
-    nome = input("Insere um nome: ")
-    for i in range(len(nomesprocura)):
-     if nomesprocura[i] == nome:
+    nome = input("Insere um nome de procura ")
+    for i in range(len(nomesp)):
+     if nomesp[i] == nome:
          indices.append(i)
-    return(indices)
-
+    # return(indices)
 
 
 while True:
@@ -48,13 +47,18 @@ while True:
         case "2":
             listar(nomes)
         case "3":
+            procurar(nomes, indices)
+            listar(indices)
             delete(nomes)
         case "4":
             #  procurar(nomes)
-            resultado = procurar(nomes, indices)
-            if resultado:
-                for i in resultado:
-                    print(f"Nome '{nomes[i]}' encontrado na posição {i}")     
+            
+            # resultado = procurar(nomes, indices)
+            # for i in resultado:
+            #     print(f"Nome '{nomes[i]}' encontrado na posição {i}")    
+            
+            procurar(nomes, indices)
+            listar(indices)
                         
         case "5":
             print("fim do programa")
