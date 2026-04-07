@@ -4,13 +4,16 @@
 # Resultado esperado: {'b': 1, 'a': 3, 'n': 2}
 # # Saída: {'b': 1, 'a': 3, 'n': 2}
 
-palavra = input("Digite uma palavra: ")
-contagem = {}
+def contar_letras():
+    palavra = input("Digite uma palavra: ")
+    contagem = {}
 
-for letra in palavra:
-    if letra in contagem:
-        contagem[letra] += 1
-    else:
-        contagem[letra] = 1
+    for letra in palavra:
+        if letra in contagem:
+            contagem[letra] += 1
+        else:
+            contagem[letra] = 1
 
-print(contagem)
+    print(contagem)
+
+contar_letras()
