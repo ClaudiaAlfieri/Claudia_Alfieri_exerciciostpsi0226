@@ -24,10 +24,13 @@ def agrupar_e_ordenar(palavras):
         grupos[letra_inicial].append(palavra)
     
     for letra in grupos:
-        for i in range(len(grupos[letra])):
-            for j in range(i + 1, len(grupos[letra])):
-                if grupos[letra][i] > grupos[letra][j]:
-                    grupos[letra][i], grupos[letra][j] = grupos[letra][j], grupos[letra][i]
+        flag = True
+        while flag:
+            flag = False
+            for i in range(len(grupos[letra]) - 1):
+                if grupos[letra][i] > grupos[letra][i + 1]:
+                    flag = True
+                    grupos[letra][i], grupos[letra][i + 1] = grupos[letra][i + 1], grupos[letra][i]
     
     return grupos
 
