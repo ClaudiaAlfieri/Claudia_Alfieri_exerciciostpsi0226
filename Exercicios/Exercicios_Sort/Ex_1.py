@@ -11,9 +11,15 @@
 # •	Se uma palavra for prefixo da outra (como "casa" e "casamento"), a mais curta deve vir primeiro.
 
 def ordenar_palavras(palavras):
-    for i in range(len(palavras)):
-        for j in range(i + 1, len(palavras)):
-            if palavras[i] > palavras[j]:
-                palavras[i], palavras[j] = palavras[j], palavras[i]
+    flag = True
+    
+    while flag:
+        flag = False
+        for i in range(len(palavras) - 1):
+            if palavras[i] > palavras[i + 1]:
+                flag = True
+                palavras[i], palavras[i + 1] = palavras[i + 1], palavras[i]
+    
     return palavras
+
 print(ordenar_palavras(["banana", "uva", "abacaxi", "laranja"]))
