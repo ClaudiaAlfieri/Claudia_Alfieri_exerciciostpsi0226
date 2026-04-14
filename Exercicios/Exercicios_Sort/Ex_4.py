@@ -17,10 +17,13 @@ def contar_minusculas(palavra):
     return count
 
 def ordenar_por_minusculas(palavras):
-    for i in range(len(palavras)):
-        for j in range(i + 1, len(palavras)):
-            if contar_minusculas(palavras[i]) > contar_minusculas(palavras[j]):
-                palavras[i], palavras[j] = palavras[j], palavras[i]
+    flag = True
+    while flag:
+        flag = False
+        for i in range(len(palavras) - 1):
+            if contar_minusculas(palavras[i]) > contar_minusculas(palavras[i + 1]):
+                flag = True
+                palavras[i], palavras[i + 1] = palavras[i + 1], palavras[i]
     return palavras
 
 print(ordenar_por_minusculas(["PYthon", "banana", "CÓDIGO", "intELIGENTE", "dados"]))
