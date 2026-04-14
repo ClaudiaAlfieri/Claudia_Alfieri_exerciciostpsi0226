@@ -9,11 +9,14 @@
 # •	Ordena da última letra para a primeira.
 # •	A lógica da comparação será invertida: em vez de colocar as menores primeiro, colocas as maiores.
 
-
 def ordenar_palavras(palavras):
-    for i in range(len(palavras)):
-        for j in range(i + 1, len(palavras)):
-            if palavras[j].lower() > palavras[i].lower():
-                palavras[j], palavras[i] = palavras[i], palavras[j]
+    flag = True
+    while flag:
+        flag = False
+        for i in range(len(palavras) - 1):
+            if palavras[i].lower() > palavras[i + 1].lower():
+                flag = True
+                palavras[i], palavras[i + 1] = palavras[i + 1], palavras[i]
     return palavras
+
 print(ordenar_palavras(["Python", "inteligência", "Aprender", "dados", "Rede"]))
