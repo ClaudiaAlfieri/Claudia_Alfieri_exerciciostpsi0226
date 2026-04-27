@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![ATEC](https://img.shields.io/badge/Training-TPSI%20%7C%20ATEC-darkgreen?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-In%20progress-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-yellow?style=for-the-badge)
 
 ---
 
@@ -24,9 +24,7 @@ Each folder corresponds to a topic or set of exercises covered in class, organiz
 - ✅ Lists, Tuples and Dictionaries
 - ✅ Exception Handling (`try`, `except`)
 - ✅ File I/O
-- 🔄 Modules and Packages
-- 🔄 Object-Oriented Programming in Python
-- 🔄 Libraries (`os`, `math`, `random`, etc.)
+- ✅ Libraries (`os`, `math`, `random`, etc.)
 
 ---
 
